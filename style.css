@@ -40,6 +40,39 @@ p{
     color: #555;
 }
 
+.search-bar, .search-bar-mobile{
+    height: 30px;
+    margin: 0 10px;
+    padding: 0 13px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.search-btn{
+    height: 23px;
+    border-radius: 10px;
+    border: none;
+    font-size: 10px;
+    background: #ff523b;
+    color: #fff;
+    width: 50px;
+    position: absolute;
+    right: 89px;
+    top: 44px;
+    cursor: pointer;
+    letter-spacing: .3px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-bar-mobile, .search-btn-mobile{
+    display: none;
+}
+
+.search-bar:active{
+
+}
+
 .container{
     max-width: 1300px;
     margin: auto;
@@ -378,8 +411,71 @@ ul{
 
 /* < !-- offer --> */
 
-@media only screen and (max-width:800px){
-     .featured-products .col-4{
+@media only screen and (max-width:900px){
+    nav ul{
+        z-index: 1;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        margin-right: 45px;
+        background: rgb(224, 224, 224);
+        width: auto;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        border-radius: 10px;
+        box-shadow: 1px 3px 26px -12px rgba(0, 0, 0, 0.75);
+        text-align: center;
+    }
+    nav ul li{
+        display: block; 
+        border-bottom: 1px solid #cecece;
+        margin-right: 0px;
+        box-shadow: inset 0 0 0 0 transparent;
+        transition: .3s ease;
+        
+    }
+    nav ul li:active,
+    nav ul li:focus-within{
+       box-shadow: inset 300px 0 0 0 #5f5f5f;
+    }
+
+    nav ul li a{
+        color: rgb(34, 34, 34);
+        line-height: 50px;
+        margin: 0px 80px;
+
+    }
+    .search-bar{
+        display: none;
+    }
+    .search-btn{
+        display: none;
+    }
+
+    .search-bar-mobile {
+        display: block;
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .search-btn-mobile {
+        display: block;
+        position: absolute;
+        top: 114.5px;
+        right: 31px;
+        height: 23px;
+        border-radius: 10px;
+        border: none;
+        font-size: 10px;
+        background: #ff523b;
+        color: #fff;
+        width: 50px;
+        cursor: pointer;
+        letter-spacing: .3px;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .featured-products .col-4{
         flex-basis: 20%;
         min-width: 100px;
 
@@ -403,39 +499,7 @@ ul{
         flex-basis: 50%;
         min-width: 100px;
     }
-    nav ul{
-        position: absolute;
-        top: 90px;
-        right: 0;
-        margin-right: 45px;
-        background: rgb(224, 224, 224);
-        width: auto;
-        overflow: hidden;
-        transition: max-height 0.5s;
-        border-radius: 10px;
-        box-shadow: 1px 3px 26px -12px rgba(0, 0, 0, 0.75);
-        text-align: center;
-        
-
-    }
-    nav ul li{
-        display: block; 
-        border-bottom: 1px solid #cecece;
-        margin-right: 0px;
-        box-shadow: inset 0 0 0 0 transparent;
-        transition: .3s ease;
-        
-    }
-    nav ul li:active,
-    nav ul li:focus-within{
-       box-shadow: inset 300px 0 0 0 #5f5f5f;
-    }
-
-    nav ul li a{
-        color: rgb(34, 34, 34);
-        line-height: 50px;
-        margin: 0px 80px;
-    }
+    
 
     .menu-icon{
         display: block;
@@ -444,6 +508,7 @@ ul{
 }
 
 @media only screen and (max-width:600px){
+     
     
     .testimonial .col-4 {
         margin: 20px 20px;
@@ -457,13 +522,13 @@ ul{
 
     }
     .footer-col-1,  .footer-col-2,  .footer-col-3,  .footer-col-4{
-        flex-basis: 100%;
-    }
+        flex-basis: 100%;   
+    }   
 
-    .brands .col-5{
-        flex-basis: 50%;
-        padding: 30px 21px;
-    }
+    .brands .col-5{ 
+        flex-basis: 50%;    
+        padding: 30px 21p   x;
+    }   
 
     .featured-products .col-4{
         flex-basis: 40%;
