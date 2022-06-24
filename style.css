@@ -479,11 +479,7 @@ ul{
         font-family: 'Poppins', sans-serif;
     }
    
-    .featured-products .col-4{
-        flex-basis: 20%;
-        min-width: 100px;
-
-    }
+ 
     .col-4{
         flex-basis: 47%;
         margin: 10px 10px;
@@ -541,10 +537,18 @@ ul{
     }   
 
     .featured-products .col-4{
-        flex-basis: 40%;
+        flex-basis: 45%;
         min-width: auto;
-
+        margin: 0 0;
+        padding: 0 0;
     }
+
+    .featured-products .col-4 h4{
+        font-size: 14px;
+    }
+        .featured-products .col-4 p{
+            font-size: 12px;
+        }
 
 
 
