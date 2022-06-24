@@ -49,6 +49,10 @@ p{
     outline: none;
 }
 
+.search-bar{
+    width: 300px;
+}
+
 .search-btn{
     height: 23px;
     border-radius: 10px;
@@ -58,7 +62,7 @@ p{
     color: #fff;
     width: 50px;
     position: absolute;
-    right: 89px;
+    transform: translateX(-129%);
     top: 44px;
     cursor: pointer;
     letter-spacing: .3px;
@@ -411,7 +415,7 @@ ul{
 
 /* < !-- offer --> */
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:850px){
     nav ul{
         z-index: 1;
         position: absolute;
@@ -505,6 +509,12 @@ ul{
         display: block;
         cursor: pointer;
     }
+
+    .brands .col-5{
+        flex-basis: 30%;
+        padding: 30px 21px;
+    }
+
 }
 
 @media only screen and (max-width:600px){
@@ -527,7 +537,7 @@ ul{
 
     .brands .col-5{ 
         flex-basis: 50%;    
-        padding: 30px 21p   x;
+        padding: 30px 21px;
     }   
 
     .featured-products .col-4{
