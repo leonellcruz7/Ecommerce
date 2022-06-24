@@ -196,8 +196,9 @@ h4{
     font-weight: normal;
 }
 
-.col-4 p{
-    font-size: 14px;
+.featured-products .col-4 p{
+    font-size: 16px;
+    margin-top: 0px;
 }
 
 .rating .fa{
@@ -378,6 +379,11 @@ ul{
 /* < !-- offer --> */
 
 @media only screen and (max-width:800px){
+     .featured-products .col-4{
+        flex-basis: 20%;
+        min-width: 100px;
+
+    }
     .col-4{
         flex-basis: 47%;
         margin: 10px 10px;
@@ -403,7 +409,7 @@ ul{
         right: 0;
         margin-right: 45px;
         background: rgb(224, 224, 224);
-        width: 30%;
+        width: auto;
         overflow: hidden;
         transition: max-height 0.5s;
         border-radius: 10px;
@@ -439,7 +445,7 @@ ul{
 
 @media only screen and (max-width:600px){
     
-    .testimonial .col-3 {
+    .testimonial .col-4 {
         margin: 20px 20px;
     }
     .row{
@@ -459,6 +465,14 @@ ul{
         flex-basis: 50%;
         padding: 30px 21px;
     }
+
+    .featured-products .col-4{
+        flex-basis: 40%;
+        min-width: 140px;
+
+    }
+
+
 
 }
 
